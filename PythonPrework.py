@@ -50,18 +50,36 @@ def is_leap_year(a_year):
     if a_year % 4 == 0:
         leap_year = True
 
-    if a_year % 100 == 0:
+    elif a_year % 100 == 0:
         leap_year = False
-    else: 
-        if a_year % 400 == 0:
-            leap_year = True
+    
+    elif a_year % 400 == 0:
+        leap_year = True
 
     return leap_year
 
-print(is_leap_year(2023)) # False
-print(is_leap_year(2022)) # False
-print(is_leap_year(2021)) # False
+print(is_leap_year(1992)) # True
+print(is_leap_year(2000)) # True
+
+print(is_leap_year(2010)) # False
+print(is_leap_year(2011)) # False
+print(is_leap_year(2012)) # True
+print(is_leap_year(2013)) # False
+print(is_leap_year(2014)) # False
+print(is_leap_year(2015)) # False
+print(is_leap_year(2016)) # True
+print(is_leap_year(2017)) # False
+print(is_leap_year(2018)) # False
+print(is_leap_year(2019)) # False
 print(is_leap_year(2020)) # True
+print(is_leap_year(2021)) # False
+print(is_leap_year(2022)) # False
+print(is_leap_year(2023)) # False
+print(is_leap_year(2024)) # True
+print(is_leap_year(2025)) # False
+print(is_leap_year(2026)) # False
+print(is_leap_year(2027)) # False
+print(is_leap_year(2028)) # True
 
         
 # Question 5
