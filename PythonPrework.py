@@ -44,20 +44,16 @@ print(max_num_in_list(a_list))
 # by 400. The return should be boolean Type (true/false).
 
 def is_leap_year(a_year):
-
-    leap_year = False
-
-    if a_year % 4 == 0:
+    if a_year % 400 == 0:
+        return True
+    elif a_year % 4 == 0 and a_year % 100 != 0:
         leap_year = True
-
-    elif a_year % 100 == 0:
-        leap_year = False
-    
-    elif a_year % 400 == 0:
-        leap_year = True
+    else:
+        return False
 
     return leap_year
-
+  
+print(is_leap_year(1900)) # False
 print(is_leap_year(1992)) # True
 print(is_leap_year(2000)) # True
 
